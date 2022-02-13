@@ -78,11 +78,11 @@ def clicked2():
       #res6= txt4.get()
     
       return(res3)
-def clicked():
-    
+def clicked(text6):
+      
        global res5
        global res6
-       
+      
        c=0
        m=0
        cm=0
@@ -190,7 +190,8 @@ def clicked():
           text6.delete(1.0, END) 
           if len(slov1)!=0:
             while i<=(len(slov1)-1):
-             print(slov1[i])       
+             #print(slov1[i])
+             print('nnnnnnnnnnnnnnnnnn')   
              text6.insert(tk.INSERT,slov1[i])
              text6.insert(tk.INSERT,"                                                  ")
              i=i+1
@@ -202,7 +203,6 @@ def clicked():
 window = Tk()
 window.title("Добро пожаловать в приложение PythonRu")  
  
-
 window.geometry('400x250')  
 lbl = Label(window, text="станция отправления")  
 lbl.grid(column=0, row=0)
@@ -222,13 +222,13 @@ def new_window(event):#второе окно
     root = Toplevel(window)
     root.geometry('400x400')
     root.title('Второе окно')
-    clicked
+    #text6=Entry(root, textvariable=val)
     text6 = st.ScrolledText(root,width = 30, height = 8,font = ("Times New Roman",15))
-  
     text6.grid(column = 0, pady = 10, padx = 10)
- 
 
 
+  
+    clicked(text6)
 
 
 
@@ -256,3 +256,29 @@ entry = Entry(window, textvariable=val)
 
 
 window.mainloop()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
